@@ -1,5 +1,30 @@
-<template name="hello">
-  <h1>Meteor CMS</h1>
-  {{greeting}}
-  <p>This is a new app.</p>
+<template name="layout">
+<body>
+<div id="container">
+  <div id="header">
+    <div class="inner">
+      <p>header</p>
+    </div>
+  </div>
+
+  <div id="main-nav">
+    <div class="inner">
+      <p>nav</p>
+    </div>
+  </div>
+
+  <div id='content'>
+    <div class="inner">
+      {{> yield}}
+    </div>
+  </div>
+
+  <div id="footer">
+    <div class="inner">
+      <p>footer</p>
+    </div>
+  </div>
+</div>
+
+</body>
 </template>
