@@ -1,2 +1,0 @@
-Meteor CMS
-Mike Barkas
