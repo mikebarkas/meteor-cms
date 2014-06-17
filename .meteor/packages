@@ -8,3 +8,5 @@ autopublish
 insecure
 iron-router
 spin
+accounts-ui
+accounts-password
