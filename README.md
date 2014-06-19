@@ -1,7 +1,7 @@
 ## Meteor CMS
 A project for learning Meteor.
 
-*Under development*
+*this project is under development*
 
 
 Mike Barkas
