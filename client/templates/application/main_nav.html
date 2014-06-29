@@ -3,6 +3,6 @@
     <li><a href="{{pathFor 'home'}}">Home</a></li>
     <li><a href="{{pathFor 'about'}}">About</a></li>
     <li><a href="{{pathFor 'articles'}}">Articles</a></li>
-    <li><a href="{{pathFor 'admin'}}">Admin</a></li>
+    {{#if currentUser}}<li><a href="{{pathFor 'admin'}}">Admin</a></li>{{/if}}
   </ul>
 </template>

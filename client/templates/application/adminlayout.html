@@ -5,7 +5,6 @@
     <div class="inner">
       <h1>Meteor Administration</h1>
       <p>Configure and edit your system.</p>
-      {{> loginButtons}}
     </div>
   </div>
 
@@ -14,6 +13,12 @@
       {{> main_nav}}
     </div>
   </div>
+
+  {{#if currentUser}}
+  <div class="admin-nav">
+    {{> admin_nav}}
+  </div>
+  {{/if}}
 
   <div id='content'>
     <div class="inner">
@@ -24,6 +29,7 @@
   <div id="footer">
     <div class="inner">
       <p>footer</p>
+      
     </div>
   </div>
 </div>
