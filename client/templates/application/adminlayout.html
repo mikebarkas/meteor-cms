@@ -1,33 +1,33 @@
-<template name="adminlayout">
+<template name='adminlayout'>
 <body>
-<div id="container">
-  <div id="header">
-    <div class="inner">
+<div id='container'>
+  <div id='header'>
+    <div class='inner'>
       <h1>Meteor Administration</h1>
       <p>Configure and edit your system.</p>
     </div>
   </div>
 
-  <div id="main-nav">
-    <div class="inner">
+  <div id='main-nav'>
+    <div class='inner'>
       {{> main_nav}}
     </div>
   </div>
 
   {{#if currentUser}}
-  <div class="admin-nav">
+  <div class='admin-nav'>
     {{> admin_nav}}
   </div>
   {{/if}}
 
   <div id='content'>
-    <div class="inner">
+    <div class='inner'>
       {{> yield}}
     </div>
   </div>
 
-  <div id="footer">
-    <div class="inner">
+  <div id='footer'>
+    <div class='inner'>
       <p>footer</p>
       
     </div>
