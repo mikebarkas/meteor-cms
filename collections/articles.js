@@ -1,5 +1,25 @@
+//
+// Define Collections
+//
 Articles = new Meteor.Collection('articles');
 
+//
+// Basic Permissions
+//
+Articles.allow({
+  update: ownsDocument,
+  remove: ownsDocument
+});
+
+Articles.deny({
+  update: function(userId, article, fieldNames) {
+    return (_.without(fieldNames, 'title', 'body', 'published').length > 0);
+  }
+});
+
+//
+// Define Methods
+//
 Meteor.methods({
 
   article: function(articleAttributes) {

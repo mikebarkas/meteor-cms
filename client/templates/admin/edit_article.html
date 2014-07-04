@@ -1,0 +1,30 @@
+<template name='editArticle'>
+  <h2>Edit Article</h2>
+  
+  <form id="edit-article-form" name="edit-article">
+    <div class="form-element">
+    <label for="title">Title</label><br/>
+      <input name="title" type="text" id="article-title" value="{{title}}"/>  
+    </div>
+
+    <div class="form-element">
+    <label for="body">Article Body</label><br/>
+      <textarea name="body" id="article-body" rows="5" cols="40">{{body}}</textarea>
+    </div>
+
+    <div class="form-element">
+    <label for="published">Published</label><br/>
+      <select name="published">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </div>
+
+    <div class="form-element">
+      <input type="submit" id="edit-article-submit" value="Update"/>
+      <a href="#" id="edit-article-delete" >Delete</a>
+    </div>
+
+  </form>
+
+</template>
