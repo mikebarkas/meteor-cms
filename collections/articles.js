@@ -7,16 +7,16 @@ Articles = new Meteor.Collection('articles');
 // Basic Permissions
 //
 Articles.allow({
-  update: ownsDocument,
-  remove: ownsDocument
+  update: permissionCheck,
+  remove: permissionCheck
 });
 
+/*
 Articles.deny({
-  update: function(userId, article, fieldNames) {
-    return (_.without(fieldNames, 'title', 'body', 'published').length > 0);
-  }
-});
+  update: ownsDocument
 
+});
+*/
 //
 // Define Methods
 //
