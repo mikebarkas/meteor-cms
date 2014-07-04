@@ -1,5 +1,5 @@
 Template.articlesList.helpers({
   article: function() {
-    return Articles.find();
+    return Articles.find({published: 'yes'});
   }
 });

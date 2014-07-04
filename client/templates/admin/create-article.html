@@ -1,10 +1,10 @@
 <template name='createArticle'>
-<h1>Add New Article</h1>
-<form id="create-article-form" name="create-article" method="post">
+<h1>Create New Article</h1>
+<form id="create-article-form" name="create-article">
 
 <div class="form-element">
 <label for="title">Title</label><br/>
-<input type="text" id="article-title" name="title" />  
+<input name="title" type="text" id="article-title" placeholder="Article Title"/>  
 </div>
 
 <div class="form-element">
@@ -14,8 +14,8 @@
 
 <div class="form-element">
 <label for="published">Published</label><br/>
-  Yes: <input type="radio" name="published" value="yes" />
-  No: <input type="radio" name="published" value="no" />
+  Yes: <input name="published" type="radio" value="yes" checked="checked" />
+  No: <input name="published" type="radio" value="no" />
 </div>
 
 <div class="form-element">
