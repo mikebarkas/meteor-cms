@@ -1,17 +1,15 @@
 <template name="articlePage">
+  <article class="article-detail">
+    <h1>{{title}}</h1>
+    <p>Submitted by: {{author}} On: {{submitted}}</p>
+    <p>{{body}}</p>
 
-<h1>{{title}}</h1>
+    {{owner}}
+    <div class="admin">
+      <p><a href="{{pathFor 'editArticle'}}">Edit</a></p>
+    </div>
 
-<p>Submitted by: {{author}} On: {{submitted}}</p>
-<p>{{body}}</p>
-
-
-{{owner}}
-<div class="admin">
-  <p><a href="{{pathFor 'editArticle'}}">Edit</a></p>
-</div>
-
-
-<hr/>
-<p><a href="{{pathFor 'articles'}}">Back to Articles</a></p>
+    <hr/>
+    <p><a href="{{pathFor 'articles'}}">Back to Articles</a></p>
+  </article>
 </template>
