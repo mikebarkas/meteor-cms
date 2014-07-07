@@ -1,21 +1,24 @@
 <template name='manageArticles'>
-  <h2>Manage Articles</h2>
+  
+  <div class="manage-articles">
+    <h2>Manage Articles</h2>
 
-  {{#each articleRow}}
-  <div class='manage-articles-row'>
-    <div class="title">
-      {{title}}
+    {{#each articleRow}}
+    <div class='manage-articles-row'>
+      <div class="title">
+        {{title}}
+      </div>
+      <div class="date">
+        Published: {{published}}
+      </div>
+      <div class="operations">
+        <p><a href="{{pathFor 'editArticle'}}">Edit</a></p>
+        <p>{{body}}</p>
+        <p>{{author}}</p>
+        <p>{{userId}}</p>
+      </div>
     </div>
-    <div class="date">
-      Published: {{published}}
-    </div>
-    <div class="operations">
-      <p><a href="{{pathFor 'editArticle'}}">Edit</a></p>
-      <p>{{body}}</p>
-      <p>{{author}}</p>
-      <p>{{userId}}</p>
-    </div>
+    <hr/>
+    {{/each}}
   </div>
-  <hr/>
-  {{/each}}
 </template>
