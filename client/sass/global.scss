@@ -80,22 +80,39 @@ h1.site-name {
   
   ul {
     padding: 15px 0 0 0;
-  }
 
-  li {
-    list-style: none;
-    float: left;
-    margin: 0 15px 0 0;
-  }
+    li {
+      list-style: none;
+      float: left;
+      margin: 0 15px 0 0;
 
-  a {
-    padding: 6px 12px;
-    text-decoration: none;
-    color: #000000;
-    
-    &:hover {
-      text-decoration: underline;
-      background: #ededed;
+      a {
+      padding: 6px 12px;
+      text-decoration: none;
+      color: #000000;
+      
+        &:hover {
+          text-decoration: underline;
+          background: #ededed;
+        }
+      }
+    }
+  }
+}
+
+#admin-nav {
+  background: #cccccc;
+  ul {
+
+    li {
+      float: left;
+      margin: 0 10px 0 0;
+      a {
+        
+        &.logout {
+          color: red;
+        }
+      }
     }
   }
 }
@@ -115,6 +132,5 @@ h1.site-name {
     border-bottom: 1px solid #cccccc;
   }
 }
-
 
 

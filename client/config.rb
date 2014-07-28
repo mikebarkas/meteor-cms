@@ -21,7 +21,7 @@ images_dir = "css/images"
 # Output Style.
 #
 # Options - :expanded :nested :compact :compressed
-output_style = (environment == :develoment) ? :expanded : :compressed
+output_style = (environment == :develoment) ? :compact : :compressed
 
 
 #
@@ -33,4 +33,4 @@ relative_assets = true
 #
 # Sass Options.
 #
-sass_options = (environment == :develoment) ? {:debug_info => true} : {:always_update => true}
+sass_options = (environment == :develoment) ? {:debug_info => false} : {:always_update => true}
