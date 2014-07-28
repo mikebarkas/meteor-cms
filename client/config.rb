@@ -21,7 +21,7 @@ images_dir = "css/images"
 # Output Style.
 #
 # Options - :expanded :nested :compact :compressed
-output_style = (enviroment == :develoment) ? :expanded : :compressed
+output_style = (environment == :develoment) ? :expanded : :compressed
 
 
 #

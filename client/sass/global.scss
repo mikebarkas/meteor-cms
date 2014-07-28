@@ -1,11 +1,51 @@
 // Import Project Declarations
 @import "_base";
 
-
+//
+// Global
+//
 body {
-	background: #e5e5e5;
+	background: $background;
+  font-family: $sans-serif;
 }
 
+h1 {
+  font-size: 1.8em;
+  margin-bottom: 8px;
+
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-size: 1.3em;
+  margin-bottom: 8px;
+}
+
+p {
+  margin-bottom: 5px;
+  line-height: 1.3em;
+}
+
+a, a:active, a:link, a:visited {
+  color: #000000;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+//
+// Structure
+//
 #container {
 	background: #fff;
 	width: 80%;
@@ -13,3 +53,68 @@ body {
 	padding: 20px;
 	border: 1px solid #999;
 }
+
+#header {
+  margin-bottom: 10px;
+}
+
+h1.site-name {
+  
+}
+
+#content {
+
+}
+
+#footer {
+
+}
+
+//
+// Navigation
+//
+#main-nav {
+  min-height: 45px;
+  background: #f5f5f5;
+  margin-bottom: 10px;
+  
+  ul {
+    padding: 15px 0 0 0;
+  }
+
+  li {
+    list-style: none;
+    float: left;
+    margin: 0 15px 0 0;
+  }
+
+  a {
+    padding: 6px 12px;
+    text-decoration: none;
+    color: #000000;
+    
+    &:hover {
+      text-decoration: underline;
+      background: #ededed;
+    }
+  }
+}
+
+//
+// Content Sections
+//
+.article-list {
+
+  h2 {
+
+  }
+
+  .article {
+    padding: 8px 0;
+    margin: 0 0 5px 0;
+    border-bottom: 1px solid #cccccc;
+  }
+}
+
+
+
